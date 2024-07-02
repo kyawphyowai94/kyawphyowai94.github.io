@@ -1,7 +1,7 @@
 /* Universal Selector */
-/* *{
+*{
     color: red;
-} */
+}
 
 /* Tag Selector or Element Selector */
 h1{
@@ -19,9 +19,55 @@ a[title="google"]{
     text-indent: 40px;
 }
 
+
+/* class selector */
 .class-select{
     color: brown;
     letter-spacing: 10px;
     word-spacing: 20px;
     line-height: 40px;
+}
+
+
+/* Descedant selector */
+div p{
+    background-color: yellow;
+}
+
+
+/* Child Selector */
+div>p{
+    color: black;
+}
+
+span>p {
+    color: red;
+}
+
+/* Hover Selector */
+
+h1 a:hover {
+    color: white;
+    font-size: 50px;
+    background-color: red;
+}
+
+h1:hover {
+    color: red;
+}
+
+h2 a:link {
+    color: green;
+}
+
+h2 a:hover {
+            color: greenyellow;
+            }
+
+h2 a:visited {
+    color: brown;
+}
+
+h2 a:active {
+    color: yellow;
 }
