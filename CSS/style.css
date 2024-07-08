@@ -1,7 +1,7 @@
 /* Universal Selector */
-*{
+/* *{
     color: red;
-}
+} */
 
 /* Tag Selector or Element Selector */
 h1{
@@ -41,7 +41,7 @@ div>p{
 }
 
 span>p {
-    color: red;
+    color:red;
 }
 
 /* Hover Selector */
@@ -70,4 +70,12 @@ h2 a:visited {
 
 h2 a:active {
     color: yellow;
+}
+
+/* Target */
+:target{
+    color: red;
+    border: 2px dotted black;
+    line-height: 20px;
+    letter-spacing: 10px;
 }
