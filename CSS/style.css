@@ -6,7 +6,7 @@
 /* Tag Selector or Element Selector */
 h1{
     text-align: center;
-    color: green;
+    color: red;
 }
 
 /* Attribute Selector */
@@ -31,7 +31,9 @@ a[title="google"]{
 
 /* Descedant selector */
 div p{
-    background-color: yellow;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 
@@ -78,4 +80,53 @@ h2 a:active {
     border: 2px dotted black;
     line-height: 20px;
     letter-spacing: 10px;
+}
+
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    /* display: block; */
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+    margin-left: 10px;
+}
+
+.clear{
+    clear:both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
+.gridone div,.gridTwo div,.gridThree div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridone,.gridTwo,.gridThree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-column-gap: 40px;
+}
+
+.gridThree{
+    grid-row-gap: 40px;
+    grid-column-gap: 70px;
 }
