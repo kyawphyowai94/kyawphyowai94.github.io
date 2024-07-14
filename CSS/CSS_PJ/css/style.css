@@ -86,7 +86,7 @@
 .carousel_icon{
     position: absolute;
     top: 120px;
-    padding-left: 900px;
+    padding-left: 600px;
     width: 200px;
     height: 320px;
 }
@@ -103,7 +103,7 @@
 .adv{
     border: 1px solid black;
     display: inline-block;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     border-radius: 5px;
     margin-right: 10px;
