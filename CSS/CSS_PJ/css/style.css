@@ -83,6 +83,14 @@
     cursor: pointer;
 }
 
+.carousel_icon{
+    position: absolute;
+    top: 120px;
+    padding-left: 900px;
+    width: 200px;
+    height: 320px;
+}
+
 /* End bunner */
 
 
