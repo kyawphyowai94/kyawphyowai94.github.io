@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatype</title>
+</head>
+<body>
+    <h1>Datatype</h1>
+
+    <script>
+        // string data type
+        // var name= "Kyaw Phyo Wai";
+        // var name='Kyaw Phyo Wai';
+        const name=`Kyaw Phyo Wai`;
+        console.log(name);
+        console.log(typeof(name));
+
+        // numeric data type
+        let num = 23.3;
+        console.log(num);
+        console.log(typeof(num));
+
+
+        // bollean data type
+        var single = true;
+        console.log(single);
+        console.log(typeof(single));
+
+
+        //null
+        var son = null;
+        console.log(son);
+        console.log(typeof(son));
+
+        //undefined
+        var mybaby;
+        console.log(mybaby);
+        console.log(typeof(mybaby));
+
+        // array data type
+        var array = new Array(1,2,3,4,"a","b","c");
+        console.log(array);
+        console.log(typeof(array));
+        console.log(array[4]);
+
+
+        var multiArray = ['Mg Mg','Ma Ma','Hla Hla',['Aung Aung','Tun Tun'],'Mya Mya'];
+        console.log(multiArray);
+        console.log(multiArray[3][0]);
+
+        // object
+        var student = {
+            //key : value
+            name : "Kyaw Phyo Wai",
+            age : 30,
+            address : "Samchaung, Yangon",
+            color : ['red','blue']
+        }
+
+        console.log(student);
+        console.log(student.name);
+        console.log(student.color[1]);
+    </script>
+</body>
+</html>
