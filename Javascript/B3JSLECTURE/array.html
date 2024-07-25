@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array Lessons</h1>
+    <script>
+        let arr1 = [1,2,3,4,5,6,8.10,14,16];
+        console.log(arr1[1]);
+        console.log(arr1.length);
+
+        let fruitlists = ['Apple','Orange','Mango','Blueberry','Water_Melon'];
+        // fruitlists.push('Banana');// နောက်ဆုံးခန်းကထပ်ထည့်တာ
+        console.log(fruitlists);
+        // fruitlists.unshift('Strawberry');//ရှေ့ဆုံးခန်းကထပ်ထည့်တာ
+        // console.log(fruitlists);
+
+        // fruitlists.pop();// နောက်ဆုံးခန်းကဖျက်တာ
+        // fruitlists.shift()  //ရှေ့ဆုံးခန်းကဖျက်တာ
+        // console.log(fruitlists);
+
+        // fruitlists.sort();
+        // console.log(fruitlists);  //a to z sort
+        // console.log(fruitlists.reverse());
+
+        // console.log(fruitlists.sort().reverse());
+        let fruitlists_Str = fruitlists.toString();
+        console.log(fruitlists_Str);
+
+        let studentLists = "Ma Ma,Hla Hla,Tun Tun,Aung Aung,Bo Bo";
+        let studentArray = studentLists.split(',');
+        console.log(studentArray);
+
+        let array1 = [1,2,3,4,5];
+        let array2 = [5,6,7];
+        let array3 = [8,9,10];
+
+        let arrayConcat = array1.concat(array2);
+        console.log(arrayConcat);
+
+        let multiArrayConcat = [...array1,...array2,...array3];
+        console.log(multiArrayConcat);
+    </script>
+</body>
+</html>
