@@ -137,6 +137,7 @@ h2 a:active {
 }
 
 .rowadd{
+    grid-column-start: 3;
     grid-row-start: 2;
     grid-row-end: 4;
 }
