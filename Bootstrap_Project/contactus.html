@@ -51,10 +51,30 @@
                     <p class="mt-2">Departure Time</p>
                   </div>
                   <div class="card-body">
-                    <p><input type="radio" name="time" id="" class="me-2">Any Time</p>
-                    <p><input type="radio" name="time" id="" class="me-2">Day Bus</p>
-                    <p><input type="radio" name="time" id="" class="me-2">Afternoon Bus</p>
-                    <p><input type="radio" name="time" id="" class="me-2">Night Bus</p>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="time" id="anyTime">
+                      <label class="form-check-label" for="anyTime">
+                        Any Time
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="time" id="dayBus">
+                      <label class="form-check-label" for="dayBus">
+                        Day Bus
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="time" id="afternoonBus">
+                      <label class="form-check-label" for="afternoonBus">
+                        Afternoon Bus
+                      </label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="time" id="nightBus">
+                      <label class="form-check-label" for="nightBus">
+                        Night Bus
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -66,15 +86,68 @@
                     <p class="mt-2">Bus Operators</p>
                   </div>
                   <div class="card-body">
-                    <p><input type="radio" name="operators" id="" class="me-2">All Operators</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">High Class</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">GI Express</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">Golden Mandalay Express</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">Kaung Myat Mann</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">Khaing Mandalay</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">King Express</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">Lin Mandalar Express</p>
-                    <p><input type="radio" name="operators" id="" class="me-2">Mann Shwe Myo Taw</p>
+                    <div class="card-body">
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="allOperators">
+                        <label class="form-check-label" for="allOperators">
+                          All Operators
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="highClass">
+                        <label class="form-check-label" for="highClass">
+                          High Class
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="gmExpress">
+                        <label class="form-check-label" for="gmExpress">
+                          Golden Mandalay Express
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input me-2" type="radio" name="Operator" id="KMM">
+                        <label class="form-check-label" for="KMM">
+                          Kaung Myat Mann
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="KM">
+                        <label class="form-check-label" for="KM">
+                          Khaing Mandalay
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="KE">
+                        <label class="form-check-label" for="KE">
+                          King Express
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="LM">
+                        <label class="form-check-label" for="LM">
+                          Lin Mandalar Express
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="MSMT">
+                        <label class="form-check-label" for="MSMT">
+                          Mann Shwe Myo Taw
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="MHAK">
+                        <label class="form-check-label" for="MHAK">
+                          Moe Htet Arkar
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="Operator" id="MMH">
+                        <label class="form-check-label" for="MMH">
+                          Myat Mandalar Htun
+                        </label>
+                      </div>
+                    </div>
                     <hr class="w-100">
                     <button class="btn success float-end">Show More</button>
                   </div>
