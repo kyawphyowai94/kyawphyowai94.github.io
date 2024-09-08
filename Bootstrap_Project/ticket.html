@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1 ms-lg-3" href="index.html"><img src="images/logo.jpg" width="50px" height="50px" alt=""></a>
+          <a class="navbar-brand text-light me-md-1 me-lg-2" href="index.html"><h3>Mobile Bus Ticket</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link me-md-2 me-lg-4 text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="todayrouth.html">Today Routh</a>
+              </li>
+              <li class="nav-item">
+                <select class="bg-dark nav-link nav-hover me-md-2 me-lg-4 text-light">
+                  <option value="">English</option>
+                  <option value="">မြန်မာ</option>
+                  <option value="">日本語</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!-- end navbar -->
+
+      <!-- start ticket design -->
+      
+      <!-- end ticket design -->
+      <div class="container-fluid">          
+        <div class="row">
+          <div class="col-lg-4 d-none d-lg-block">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card offset-1 mt-5 w-75">
+                      <div class="card-header bg-dark text-white">
+                        <p class="mt-2">Departure Time</p>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="time" id="anyTime">
+                          <label class="form-check-label" for="anyTime">
+                            Any Time
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="time" id="dayBus">
+                          <label class="form-check-label" for="dayBus">
+                            Day Bus
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="time" id="afternoonBus">
+                          <label class="form-check-label" for="afternoonBus">
+                            Afternoon Bus
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="time" id="nightBus">
+                          <label class="form-check-label" for="nightBus">
+                            Night Bus
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row mb-5">
+                  <div class="col-12">
+                    <div class="card offset-1 mt-5 w-75">
+                      <div class="card-header bg-dark text-white">
+                        <p class="mt-2">Bus Operators</p>
+                      </div>
+                      <div class="card-body">
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="allOperators">
+                          <label class="form-check-label" for="allOperators">
+                            All Operators
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="highClass">
+                          <label class="form-check-label" for="highClass">
+                            High Class
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="gmExpress">
+                          <label class="form-check-label" for="gmExpress">
+                            Golden Mandalay Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input me-2" type="radio" name="Operator" id="KMM">
+                          <label class="form-check-label" for="KMM">
+                            Kaung Myat Mann
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="KM">
+                          <label class="form-check-label" for="KM">
+                            Khaing Mandalay
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="KE">
+                          <label class="form-check-label" for="KE">
+                            King Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="LM">
+                          <label class="form-check-label" for="LM">
+                            Lin Mandalar Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="MSMT">
+                          <label class="form-check-label" for="MSMT">
+                            Mann Shwe Myo Taw
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="MHAK">
+                          <label class="form-check-label" for="MHAK">
+                            Moe Htet Arkar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="MMH">
+                          <label class="form-check-label" for="MMH">
+                            Myat Mandalar Htun
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="myatM">
+                          <label class="form-check-label" for="myatM">
+                            Myat Mingalar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="SM">
+                          <label class="form-check-label" for="SM">
+                            Shwe Mandalay
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="TL">
+                          <label class="form-check-label" for="TL">
+                            Tatt Lann
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="MST">
+                          <label class="form-check-label" for="MST">
+                            Myo Set Titt
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="SSS">
+                          <label class="form-check-label" for="SSS">
+                            Shwe Sin Sattkyar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="CTT">
+                          <label class="form-check-label" for="CTT">
+                            Chin Taung Tan
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="NHTW">
+                          <label class="form-check-label" for="NHTW">
+                            Nann Htike Tawin
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="KTA">
+                          <label class="form-check-label" for="KTA">
+                            Kyan Tie Aung
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="NMH">
+                          <label class="form-check-label" for="NMH">
+                            New Mandalar Htun
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="SK">
+                          <label class="form-check-label" for="SK">
+                            Shwe Kachin
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="KMY">
+                          <label class="form-check-label" for="KMY">
+                            Khaing Mandalay
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="lumbini">
+                          <label class="form-check-label" for="lumbini">
+                            Lumbini
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="DNN">
+                          <label class="form-check-label" for="DNN">
+                            Doe Nyi Naung
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="TPT">
+                          <label class="form-check-label" for="TPT">
+                            Taung Pyar Tan
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="MKT">
+                          <label class="form-check-label" for="MKT">
+                            Maw Kun Thit
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="mahar">
+                          <label class="form-check-label" for="mahar">
+                            Mahar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="wThitsar">
+                          <label class="form-check-label" for="wThitsar">
+                            Win Thitsar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="WPA">
+                          <label class="form-check-label" for="WPA">
+                            Wai Phyo Aung
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="shweMyanmar">
+                          <label class="form-check-label" for="shweMyanmar">
+                            Shwe Myanmar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="SLP">
+                          <label class="form-check-label" for="SLP">
+                            Shwe Lwin Pyin
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="acamedy">
+                          <label class="form-check-label" for="acamedy">
+                            Acamedy
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="NHM">
+                          <label class="form-check-label" for="NHM">
+                            Ngwe Hnin Mandalar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="ZYMG">
+                          <label class="form-check-label" for="ZYMG">
+                            ZYMG Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="boss">
+                          <label class="form-check-label" for="boss">
+                            BOSS
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="ok">
+                          <label class="form-check-label" for="ok">
+                            OK Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="asia">
+                          <label class="form-check-label" for="asia">
+                            ASIA Express
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="SPT">
+                          <label class="form-check-label" for="SPT">
+                            Shwe Pyi Thit
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="sty">
+                          <label class="form-check-label" for="sty">
+                            Shwe Taung Yoe
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="manawTaghon">
+                          <label class="form-check-label" for="manawTaghon">
+                            Manaw Taghon
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="yoma">
+                          <label class="form-check-label" for="yoma">
+                            Yoma Mandalar
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="yeAunglan">
+                          <label class="form-check-label" for="yeAunglan">
+                            Ye Aunglan
+                          </label>
+                        </div>
+                        <div class="form-check mb-3">
+                          <input class="form-check-input" type="radio" name="Operator" id="ssWaddy">
+                          <label class="form-check-label" for="ssWaddy">
+                            Shwe Sin Waddy
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-lg-8 ms-2 ms-lg-0">
+            <div class="row me-2">
+              <div class="card mt-5">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">8:00 AM - VIP</p>
+                      <p>Yangon-Mandalay</p>
+                      <p>Departs : Sep 08, 8:00 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 4:00 PM Duration : 8 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/mandalarmin.jpg" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 60,000</p>
+                    <p class="">1 seat x 60,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 PM - STANDARD</p>
+                      <p>Mandalay-Yangon</p>
+                      <p>Departs : Sep 08, 7:30 PM <i class="fa-solid fa-moon text-primary"></i> <span class="text-primary">Night Bus</span></p>
+                      <p>Arrives : Sep 08, 5:30 AM Duration : 10 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/shwemandalay.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 float-end col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 42,000</p>
+                      <p>1 seat x 42,000</p>
+                      <a href="standard_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 PM - VIP</p>
+                      <p>Monywa-Yangon</p>
+                      <p>Departs : Sep 08, 7:30 PM <i class="fa-solid fa-moon text-primary"></i> <span class="text-primary">Night Bus</span></p>
+                      <p>Arrives : Sep 08, 6:A0 PM Duration : 11 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/shwesinsetkyar.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 80,000</p>
+                    <p>1 seat x 80,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 AM - VIP</p>
+                      <p>Yangon-Mandalay-Monywa</p>
+                      <p>Departs : Sep 08, 7:30 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 6:30 PM Duration : 11 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/myatmandalarhtun.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 70,000</p>
+                    <p>1 seat x 70,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 AM - STANDARD</p>
+                      <p>Yangon-Mandalay</p>
+                      <p>Departs : Sep 08, 7:30 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 5:30 PM Duration : 10 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/khaingmandalay.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 45,000</p>
+                    <p>1 seat x 45,000</p>
+                    <a href="standard_seat.html" class="btn success mb-3">Select Trip</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">8:30 AM - VIP</p>
+                      <p>Yangon-Mandalay-Pyin Oo Lwin</p>
+                      <p>Departs : Sep 08, 8:30 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 9:30 PM Duration : 12 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/myosetthit.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 70,000</p>
+                    <p class="float-end">1 seat x 70,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">8:00 PM - VIP</p>
+                      <p>Mandalay-Yangon</p>
+                      <p>Departs : Sep 08, 8:00 PM <i class="fa-solid fa-moon text-primary"></i> <span class="text-primary">Night Bus</span></p>
+                      <p>Arrives : Sep 08, 6:00 AM Duration : 10 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/lonevani.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 55,000</p>
+                    <p>1 seat x 55,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 AM - STANDARD</p>
+                      <p>Yangon-Mandalay</p>
+                      <p>Departs : Sep 08, 7:30 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 9:30 PM Duration : 13 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/mannyarzar.png" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 42,000</p>
+                    <p>1 seat x 42,000</p>
+                    <a href="standard_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row me-2 mb-5">
+              <div class="card mt-2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p class="h4">7:30 AM - VIP</p>
+                      <p>Yangon-Nay Pyi Taw</p>
+                      <p>Departs : Sep 08, 7:30 AM <i class="fa-solid fa-sun text-primary"></i> <span class="text-primary">Day Bus</span></p>
+                      <p>Arrives : Sep 08, 2:30 PM Duration : 7 Hours</p>
+                      <p class="fst-italic fw-lighter text-danger">Please bring your NRC</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                      <img src="images/mandalarmin.jpg" alt="" class="w-100 mt-5">
+                    </div>
+                    <div class="col-12 col-md-3 mt-5">
+                      <p class="h4 text-success">MMK 45,000</p>
+                    <p>1 seat x 45,000</p>
+                    <a href="vip_seat.html" class="btn success mb-3">Select Trip</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+      <!-- start footer -->
+      <footer class="container-fluid bg-dark">
+        <div class="container py-5 text-white">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="images/logo.jpg" alt="" class="w-25 mb-3 ms-5 ms-md-0">
+              <p class=" ms-5 ms-md-0">Find/Print Your Ticket</p>
+              <p class=" ms-5 ms-md-0">How to open MPU Ecommerce</p>
+              <p class=" ms-5 ms-md-0">How to buy using bank transfer</p>
+              <p class="mb-5">
+                <i class="fa-brands fa-facebook fa-xl me-1  ms-5 ms-md-0"></i>
+                <i class="fa-brands fa-square-instagram fa-xl me-1"></i>
+                <i class="fa-brands fa-square-twitter fa-xl me-1"></i>
+                <i class="fa-brands fa-square-github fa-xl me-1"></i>
+                <i class="fa-brands fa-square-youtube fa-xl me-1"></i>
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-5">
+              <h5 class="ms-5 ms-md-0">Quick Link</h5>
+              <hr class="w-25 ms-2  ms-5 ms-md-0">
+              <a href="index.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Home</a>
+              <a href="about" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">About</a>
+              <a href="contactus.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Contact Us</a>
+              <a href="todayrouth.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Today Routh</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-5">
+              <h5 class="ms-5 ms-md-0">Contact Us</h5>
+              <hr class="w-25 ms-2 ms-5 ms-md-0">
+              <p><i class="fa-solid fa-phone-volume ms-2 me-2 ms-5 ms-md-0"></i>09 954545875</p>
+              <p><i class="fa-solid fa-envelope ms-2 me-2 ms-5 ms-md-0"></i>kyawphyowai.sgg@gmail.com</p>
+              <p><i class="fa-solid fa-location-dot ms-2 me-2 ms-5 ms-md-0"></i>No.39, Myaung Mya Street,</p>
+              <p class="contact-margin ms-5 ms-md-0">Sanchaung Twp, Yangon</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <h5 class="ms-5 ms-md-0">Payment</h5>
+              <hr class="w-25 ms-5 ms-md-0">
+              <p class="img-fluid">
+                <img src="images/kbzpay.png" alt="" class="payment-width ms-2 me-2 ms-5 ms-md-0">
+                <img src="images/cb pay.png" alt="" class="payment-width me-2">
+                <img src="images/wave.jpg" alt="" class="payment-width me-2">
+                <img src="images/aya pay.jpg" alt="" class="payment-width me-2">
+              </p>
+              <p class="img-fluid">
+                <img src="images/yoma.png" alt="" class="payment-width ms-2 me-2 ms-5 ms-md-0">
+                <img src="images/mpitesan.png" alt="" class="payment-width me-2">
+                <img src="images/uabpay.png" alt="" class="payment-width me-2">
+                <img src="images/jcb.png" alt="" class="payment-width me-2">
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+</body>
+</html>
+
+

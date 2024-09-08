@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('fonts/static/Oswald-Regular.ttf');
+}
+
+
+
+/* start navbar */
+.active_page{
+    color: rgb(131, 173, 194) !important;
+    font-weight: bold;
+}
+
+.nav-hover:hover{
+    color: rgb(131, 173, 194) !important;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.light{
+    color: white;
+}
+
+/* end navbar */
+
+/* start carousel */
+.carousel_text{
+    top: 20%;
+    right: 15%;
+}
+
+.carousel_respon{
+    opacity: 30%;
+}
+
+.carousel_text_width{
+    width: 350px;
+}
+
+.date_text{
+    color: white;
+}
+
+/* end carousel */
+
+/* start famous place */
+
+.slider {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 2.5rem;
+}
+
+.item {
+	animation: animate 20s linear infinite;
+}
+.item img
+	{
+		min-width: 200px;
+		padding: 0 30px;
+	}
+.slider:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1800px, 0, 0);
+	}
+}
+
+/* end famous place */
+
+/* start tour package */
+.figure {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+  }
+  .figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .figure:hover img.Sirv.image-hover {
+    opacity: 1;
+  }
+  /* end tour package */
+
+
+/* start contact us form */
+
+.regForm{
+    border: 2px solid #6c757d;
+    border-radius: 5px;
+}
+.reg_hover:hover{
+    background-color: #3e4144;
+    color: white;
+}
+
+/* end contact us form */
+
+/* start footer */
+.contact-margin{
+    margin-left: 25px;
+}
+
+.payment-width{
+    width: 40px;
+    height: 40px;
+}
+
+/* end footer */
+
+/* start search trip */
+
+.search-routh{
+    border: solid 1px black;
+    border-radius: 5px;
+    
+}
+
+/* end search trip */
+
+.success{
+    background-color: rgb(8, 193, 73);
+    color: white;
+}
+
+.success:hover{
+    background-color: rgb(13, 131, 54);
+    color: white;
+}
+
+.text-success1{
+    color: rgb(8, 193, 73);
+}
+
+.imgwh{
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://drzbgvp8lrh8o.cloudfront.net/stylesheets/v20200616/operator-sprite.css">
+</head>
+<body>
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1 ms-lg-3" href="index.html"><img src="images/logo.jpg" width="50px" height="50px" alt=""></a>
+          <a class="navbar-brand text-light me-md-1 me-lg-2" href="index.html"><h3>Mobile Bus Ticket</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link me-md-2 me-lg-4 active active_page" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="contactus.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="todayrouth.html">Today Routh</a>
+              </li>
+              <li class="nav-item">
+                <select class="bg-dark nav-link nav-hover me-md-2 me-lg-4 text-light">
+                  <option value="">English</option>
+                  <option value="">မြန်မာ</option>
+                  <option value="">日本語</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!-- end navbar -->
+
+    <!-- start carousel -->
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/carousel1.jpg" class="w-100 h-50" alt="">
+              <div class="carousel_text position-absolute carousel_text_width text-white bg-dark bg-opacity-75 d-none d-md-block w-25">
+                  <form action="" class="p-2 d-none d-lg-block">
+                    <h3 class="form-label text-center mb-md-2 mb-lg-3">Search Routh</h3>
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">From</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">To</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <input type="date" class="btn btn-secondary date_text w-100 mb-2 mb-md-3" name="" id="">
+                    
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-3">
+                          <button class="btn btn-secondary w-100">-</button>
+                        </div>
+                        <div class="col-6">
+                          <button class="btn btn-secondary w-100">1 Seat</button>
+                        </div>
+                        <div class="col-3">
+                          <button class="btn btn-secondary float-start w-100">+</button>
+                        </div> 
+                      </div>
+                    </div>
+                    
+                    <a href="ticket.html" class="btn success btn-lg w-100">Search Now</a>
+                  </form>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/carousel2.jpg" class="w-100 h-50" alt="">
+              <div class="carousel_text position-absolute carousel_text_width text-white bg-dark bg-opacity-75 d-none d-md-block w-25">
+                  <form action="" class="p-2 d-none d-lg-block">
+                    <h3 class="form-label text-center mb-md-2 mb-lg-3">Search Routh</h3>
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">From</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">To</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <input type="date" class="btn btn-secondary date_text w-100 mb-2 mb-md-3" name="" id="">
+                    
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-3">
+                          <button class="btn btn-secondary w-100">-</button>
+                        </div>
+                        <div class="col-6">
+                          <button class="btn btn-secondary w-100">1 Seat</button>
+                        </div>
+                        <div class="col-3">
+                          <button class="btn btn-secondary float-start w-100">+</button>
+                        </div> 
+                      </div>
+                    </div>
+                    
+                    <a href="ticket.html" class="btn success btn-lg w-100">Search Now</a>
+                  </form>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/carousel3.jpg" class="d-block w-100 h-50" alt="">
+              <div class="carousel_text position-absolute carousel_text_width text-white bg-dark bg-opacity-75 d-none d-md-block w-25">
+                  <form action="" class="d-none d-lg-block p-2">
+                    <h3 class="form-label text-center mb-md-2 mb-lg-3">Search Routh</h3>
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">From</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+                      <option value="">To</option>
+                      <option value="">Bago(ပဲခူး)</option>
+                      <option value="">Chaung Thar(ချောင်းသာ)</option>
+                      <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+                      <option value="">Daik-U(ဒိုက်ဦး)</option>
+                      <option value="">Hpakan(ဖားကန့်)</option>
+                      <option value="">Kalaw(ကလော)</option>
+                      <option value="">Kale(ကလေး)</option>
+                      <option value="">Kalewa(ကလေးဝ)</option>
+                      <option value="">Katha(ကသာ)</option>
+                      <option value="">Kawkareik(ကော့ကရိတ်)</option>
+                      <option value="">Kawthaung(ကော့သောင်း)</option>
+                      <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+                      <option value="">Khin-U(ခင်ဦး)</option>
+                      <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+                      <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+                      <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+                      <option value="">Kyaikto(ကျိုက်ထို)</option>
+                      <option value="">Kyaukme(ကျောက်မဲ)</option>
+                      <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+                      <option value="">Kyaukse(ကျောက်ဆည်)</option>
+                      <option value="">Lashio(လားရှိုး)</option>
+                      <option value="">Magway(မကွေး)</option>
+                      <option value="">Mandalay(မန္တလေး)</option>
+                      <option value="">Mawlamyine(မော်လမြိုင်)</option>
+                      <option value="">Meiktila(မိတ္ထီလာ)</option>
+                      <option value="">Monywa(မုံရွာ)</option>
+                      <option value="">Mrauk-U(မြောက်ဦး)</option>
+                      <option value="">Myingyan(မြင်းခြံ)</option>
+                      <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+                      <option value="">Nawngkio(နောင်ချို)</option>
+                      <option value="">Naypyitaw(နေပြည်တော်)</option>
+                      <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+                      <option value="">Sagaing(စစ်ကိုင်း)</option>
+                      <option value="">Shwe Bo(ရွှေဘို)</option>
+                      <option value="">Tanintharyi(တနင်္သာရီ)</option>
+                      <option value="">Taunggyi(တောင်ကြီး)</option>
+                      <option value="">Ye(ရေး)</option>
+                      <option value="">Ye-U(ရေဦး)</option>
+                    </select>
+
+                    <input type="date" class="btn btn-secondary date_text w-100 mb-2 mb-md-3" name="" id="">
+                    
+                    <div class="container-fluid">
+                      <div class="row mb-3">
+                        <div class="col-3">
+                          <button class="btn btn-secondary w-100">-</button>
+                        </div>
+                        <div class="col-6">
+                          <button class="btn btn-secondary w-100">1 Seat</button>
+                        </div>
+                        <div class="col-3">
+                          <button class="btn btn-secondary float-start w-100">+</button>
+                        </div> 
+                      </div>
+                    </div>
+                    
+                    <a href="ticket.html" class="btn success btn-lg w-100">Search Now</a>
+                  </form>
+              </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="text-white bg-dark bg-opacity-75 d-block d-lg-none">
+          <form action=""class=" p-1 p-md-2">
+            <h3 class="form-label text-center mt-3 mb-3">Search Routh</h3>
+            <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+              <option value="">From</option>
+              <option value="">Bago(ပဲခူး)</option>
+              <option value="">Chaung Thar(ချောင်းသာ)</option>
+              <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+              <option value="">Daik-U(ဒိုက်ဦး)</option>
+              <option value="">Hpakan(ဖားကန့်)</option>
+              <option value="">Kalaw(ကလော)</option>
+              <option value="">Kale(ကလေး)</option>
+              <option value="">Kalewa(ကလေးဝ)</option>
+              <option value="">Katha(ကသာ)</option>
+              <option value="">Kawkareik(ကော့ကရိတ်)</option>
+              <option value="">Kawthaung(ကော့သောင်း)</option>
+              <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+              <option value="">Khin-U(ခင်ဦး)</option>
+              <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+              <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+              <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+              <option value="">Kyaikto(ကျိုက်ထို)</option>
+              <option value="">Kyaukme(ကျောက်မဲ)</option>
+              <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+              <option value="">Kyaukse(ကျောက်ဆည်)</option>
+              <option value="">Lashio(လားရှိုး)</option>
+              <option value="">Magway(မကွေး)</option>
+              <option value="">Mandalay(မန္တလေး)</option>
+              <option value="">Mawlamyine(မော်လမြိုင်)</option>
+              <option value="">Meiktila(မိတ္ထီလာ)</option>
+              <option value="">Monywa(မုံရွာ)</option>
+              <option value="">Mrauk-U(မြောက်ဦး)</option>
+              <option value="">Myingyan(မြင်းခြံ)</option>
+              <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+              <option value="">Nawngkio(နောင်ချို)</option>
+              <option value="">Naypyitaw(နေပြည်တော်)</option>
+              <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+              <option value="">Sagaing(စစ်ကိုင်း)</option>
+              <option value="">Shwe Bo(ရွှေဘို)</option>
+              <option value="">Tanintharyi(တနင်္သာရီ)</option>
+              <option value="">Taunggyi(တောင်ကြီး)</option>
+              <option value="">Ye(ရေး)</option>
+              <option value="">Ye-U(ရေဦး)</option>
+            </select>
+
+            <select name="" id="" class="btn btn-secondary w-100 mb-2 mb-md-3">
+              <option value="">To</option>
+              <option value="">Bago(ပဲခူး)</option>
+              <option value="">Chaung Thar(ချောင်းသာ)</option>
+              <option value="">Dagonayar(Yangon)(ဒဂုန်ဧရာ(ရန်ကုန်))</option>
+              <option value="">Daik-U(ဒိုက်ဦး)</option>
+              <option value="">Hpakan(ဖားကန့်)</option>
+              <option value="">Kalaw(ကလော)</option>
+              <option value="">Kale(ကလေး)</option>
+              <option value="">Kalewa(ကလေးဝ)</option>
+              <option value="">Katha(ကသာ)</option>
+              <option value="">Kawkareik(ကော့ကရိတ်)</option>
+              <option value="">Kawthaung(ကော့သောင်း)</option>
+              <option value="">Keng Tung(ကျိုင်းတုံ)</option>
+              <option value="">Khin-U(ခင်ဦး)</option>
+              <option value="">Kyaikkami(ကျိုက်ခမီ)</option>
+              <option value="">Kyaiklat(ကျိုက်လတ်)</option>
+              <option value="">Kyaiktiyo(ကျိုက်ထီးရိုး)</option>
+              <option value="">Kyaikto(ကျိုက်ထို)</option>
+              <option value="">Kyaukme(ကျောက်မဲ)</option>
+              <option value="">Kyaukpadaung(ကျောက်ပန်းတောင်း)</option>
+              <option value="">Kyaukse(ကျောက်ဆည်)</option>
+              <option value="">Lashio(လားရှိုး)</option>
+              <option value="">Magway(မကွေး)</option>
+              <option value="">Mandalay(မန္တလေး)</option>
+              <option value="">Mawlamyine(မော်လမြိုင်)</option>
+              <option value="">Meiktila(မိတ္ထီလာ)</option>
+              <option value="">Monywa(မုံရွာ)</option>
+              <option value="">Mrauk-U(မြောက်ဦး)</option>
+              <option value="">Myingyan(မြင်းခြံ)</option>
+              <option value="">Myitkyina(မြစ်ကြီးနား)</option>
+              <option value="">Nawngkio(နောင်ချို)</option>
+              <option value="">Naypyitaw(နေပြည်တော်)</option>
+              <option value="">Pyin Oo Lwin(ပြင်ဦးလွင်)</option>
+              <option value="">Sagaing(စစ်ကိုင်း)</option>
+              <option value="">Shwe Bo(ရွှေဘို)</option>
+              <option value="">Tanintharyi(တနင်္သာရီ)</option>
+              <option value="">Taunggyi(တောင်ကြီး)</option>
+              <option value="">Ye(ရေး)</option>
+              <option value="">Ye-U(ရေဦး)</option>
+            </select>
+
+            <input type="date" class="btn btn-secondary date_text w-100 mb-2 mb-md-3" name="" id="">
+              <div class="row">
+                <div class="col-2">
+                  <button class="btn btn-secondary mb-2 mb-md-3 w-100">-</button>
+                </div>
+                <div class="col-8">
+                  <button class="btn btn-secondary mb-2 mb-md-3 w-100">1 Seat</button>
+                </div>
+                <div class="col-2">
+                  <button class="btn btn-secondary mb-2 mb-md-3 w-100">+</button>
+                </div>
+              </div>
+              <a href="ticket.html" class="btn success btn-lg w-100">Search Now</a>
+          </form>
+    </div>
+      
+    <!-- end carousel -->
+
+    <!-- start famous place -->
+    <h3 class="text-center mt-5 mb-3">BEST VISIT PLACES IN MYANMAR</h3>
+    <div class="slider">
+      <div class="item">
+        <a href=""><img alt="logo" src="images/bagan.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Bagan</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/yangon1.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Yangon</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/mandalay.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Mandalay</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/myauk-u.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Myauk-U</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/inlay.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Inlay</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/ngwe saung.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Ngwe Saung</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/kalaw.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Kalaw</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/chaungtha2.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Chaungtha</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/monywa.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Monywa</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/kyaiktiyo.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Kyaiktiyo</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/sagaing2.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Sagaing</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/pyinoolwin.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Pyin Oo Lwin</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/yangon.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Yangon</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/bagan1.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Bagan</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/mandalay1.jpg" class="w-100"></a>
+        <h4 class="text-center mt-2">Mandalay</h4>
+      </div>
+      <div class="item">
+        <a href=""><img alt="logo" src="images/taunggyi1.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Taunggyi</h4>
+      </div>
+      
+      <div class="item">
+        <a href=""><img alt="logo" src="images/bagan2.avif" class="w-100"></a>
+        <h4 class="text-center mt-2">Bagan</h4>
+      </div>
+    </div>
+    
+    <!-- end famous place -->
+
+    <!-- start promo -->
+     <img src="images/shwebooking.png" alt="" class="img-fluid w-100 mb-5">
+
+    <!-- end promo -->
+
+      <!-- start Tour Package -->
+      <div class="container">
+      <h3 class="text-uppercase text-center fw-bold"><i class="fa-brands fa-usps me-2 fa-xl"></i>TOUR PACKAGE<i class="fa-brands fa-usps ms-2 fa-xl"></i></h3>
+      <p class="text-center h5">Most Visit Famous Place In Myanmar.</p>
+      <div class="row my-5 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/bagan.avif" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/bagan2.avif" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Bagan</p>
+              <p class="card-title h5 ms-4 text-decoration-none">3 Nights & 4 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Bagan, Nyaung-U, Popa</p>
+              <p class="ms-5">1 Person-750000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/inlay.jpg" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/inlay2.avif" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Inlay</p>
+              <p class="card-title h5 ms-4 text-decoration-none">2 Nights & 3 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Taunggyi, Inlay, Pindaya</p>
+              <p class="ms-5">1 Person-550000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/kyaiktiyo.jpg" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/kyaiktiyo2.jpg" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Kyaiktiyo</p>
+              <p class="card-title h5 ms-4 text-decoration-none">1 Night & 2 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Bago, Hpa Yar Gyi, Kyaiktiyo</p>
+              <p class="ms-5">1 Person-200000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/chaungtha1.avif" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/chaungtha2.avif" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Chaungtha</p>
+              <p class="card-title h5 ms-4 text-decoration-none">3 Nights & 4 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Chaungtha, Theahpyukyun</p>
+              <p class="ms-5">1 Person-750000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/myauk-u.avif" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/myauk-u.jpg" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Myauk-U</p>
+              <p class="card-title h5 ms-4 text-decoration-none">3 Nights & 4 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Sittwe, Myauk-U</p>
+              <p class="ms-5">1 Person-750000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card bg-body-secondary">
+            <a href="" class="course_img_hidden figure">
+              <img src="images/monywa.jpg" alt="" class="card-img-top course_img_hover Sirv image-main">
+              <img src="images/monywa1.jpg" alt="" class="card-img-top course_img_hover Sirv image-hover">
+            </a>
+            <div class="card-body">
+              <p class="card-title h4 ms-4 text-decoration-none">Yangon-Monywa</p>
+              <p class="card-title h5 ms-4 text-decoration-none">2 Nights & 3 Days</p>
+            </div>
+            <p class="my-0 py-0">
+              <p class="ms-5"><i class="fa-solid fa-utensils me-2"></i>Breakfast, Lanch, Dinner</p>
+              <p class="ms-5"><i class="fa-solid fa-hotel me-2"></i>Hotal</p>
+              <p><i class="fa-solid fa-map-location-dot ms-5 me-2"></i>Monywa, Mount Fulwin</p>
+              <p class="ms-5">1 Person-400000 MMK</p>
+              <p><button class="btn btn-secondary float-end w-50 me-3">Select Trip</button></p>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- end Tour Package -->
+
+      <!-- start operator -->
+      <div class="container-fluid mt-5">
+        <h3 class="text-center fw-bold">
+          <i class="fa-solid fa-user-tie me-2 fa-xs"></i>OUR OPERATORS <i class="fa-solid fa-user-tie ms-2 fa-xs"></i>
+        </h3>
+          <div class="slider">
+            <div class="item me-3">
+                <div class='icon-shwemandalar'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-mandalar-minn'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-baganminthar'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-myat-mandalar-tun'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-shwetaungyoe'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-taung-pyar-tann'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-gi-express'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-lumbini'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-shwemandalay'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-khaing-mandalay'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-shwe-sin-sat-kyar'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-myosatthit'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-mann-yar-zar'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-high-class'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-tat-lann'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-nannhtike-tawwin'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-chin-taung-tan'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-kyan-taing-aung'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-new-mandalar-tun'></div>
+            </div>
+            <div class="item me-3">
+                <div class='icon-ngwe-hnin-mandalar'></div>
+            </div>
+            <div class="item me-3">
+              <div class='icon-shwe-ka-chin'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-shwe-kha-yee'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-shwe-loon-pyan'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-shwemyanmar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-shwe-myo-taw'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-shwe-wel-thu'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-tat-naylin'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-tun-aya'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-ye-aung-lan'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-yoma-mandalar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-zayar-myaing-gyi'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-boss'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-yar-zar-tun'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-areindmar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-taung-paw-thar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-moehtetarkar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-manawtakon'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-kyawhlwar'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-okexpress'></div>
+            </div>
+  
+            <div class="item me-3">
+              <div class='icon-high-boss'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-gone-gyi-shin'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-ma-har'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-wai-phyo-aung'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-maw-kon-thit'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-asia-express'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-doh-nyi-naung'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-hakha-mann'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-shwe-lwin-pyin'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-tharmanya'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-shwe-pyi-thit'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-winthitsar'></div>
+            </div>
+
+            <div class="item me-3">
+            <div class='icon-shwe-lashio'></div>
+            </div>
+
+            <div class="item me-3">
+              <div class='icon-aung-thein-pike'></div>
+            </div>    
+          </div>
+      </div>
+      <!-- end operator -->
+
+      <!-- start footer -->
+      <footer class="container-fluid bg-dark">
+        <div class="container py-5 text-white">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <img src="images/logo.jpg" alt="" class="w-25 mb-3 ms-5 ms-md-0">
+              <p class=" ms-5 ms-md-0">Find/Print Your Ticket</p>
+              <p class=" ms-5 ms-md-0">How to open MPU Ecommerce</p>
+              <p class=" ms-5 ms-md-0">How to buy using bank transfer</p>
+              <p class="mb-5">
+                <i class="fa-brands fa-facebook fa-xl me-1  ms-5 ms-md-0"></i>
+                <i class="fa-brands fa-square-instagram fa-xl me-1"></i>
+                <i class="fa-brands fa-square-twitter fa-xl me-1"></i>
+                <i class="fa-brands fa-square-github fa-xl me-1"></i>
+                <i class="fa-brands fa-square-youtube fa-xl me-1"></i>
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-5">
+              <h5 class="ms-5 ms-md-0">Quick Link</h5>
+              <hr class="w-25 ms-2  ms-5 ms-md-0">
+              <a href="index.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Home</a>
+              <a href="about" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">About</a>
+              <a href="contactus.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Contact Us</a>
+              <a href="todayrouth.html" class="d-block text-decoration-none text-white mt-3 ms-2  ms-5 ms-md-0">Today Routh</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-5">
+              <h5 class="ms-5 ms-md-0">Contact Us</h5>
+              <hr class="w-25 ms-2 ms-5 ms-md-0">
+              <p><i class="fa-solid fa-phone-volume ms-2 me-2 ms-5 ms-md-0"></i>09 954545875</p>
+              <p><i class="fa-solid fa-envelope ms-2 me-2 ms-5 ms-md-0"></i>kyawphyowai.sgg@gmail.com</p>
+              <p><i class="fa-solid fa-location-dot ms-2 me-2 ms-5 ms-md-0"></i>No.39, Myaung Mya Street,</p>
+              <p class="contact-margin ms-5 ms-md-0">Sanchaung Twp, Yangon</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <h5 class="ms-5 ms-md-0">Payment</h5>
+              <hr class="w-25 ms-5 ms-md-0">
+              <p class="img-fluid">
+                <img src="images/kbzpay.png" alt="" class="payment-width ms-2 me-2 ms-5 ms-md-0">
+                <img src="images/cb pay.png" alt="" class="payment-width me-2">
+                <img src="images/wave.jpg" alt="" class="payment-width me-2">
+                <img src="images/aya pay.jpg" alt="" class="payment-width me-2">
+              </p>
+              <p class="img-fluid">
+                <img src="images/yoma.png" alt="" class="payment-width ms-2 me-2 ms-5 ms-md-0">
+                <img src="images/mpitesan.png" alt="" class="payment-width me-2">
+                <img src="images/uabpay.png" alt="" class="payment-width me-2">
+                <img src="images/jcb.png" alt="" class="payment-width me-2">
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+      <script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="fontawesome/js/all.min.js"></script>
+
+      <style>
+  /*  Rollover image styles  */
+  
+      </style>
+
+<script>
+  $(document).ready(function () {
+      $('.customer-logos').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [{
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 4
+              }
+          }, {
+              breakpoint: 520,
+              settings: {
+                  slidesToShow: 3
+              }
+          }]
+      });
+  });
+</script>
+</body>
+</html>
