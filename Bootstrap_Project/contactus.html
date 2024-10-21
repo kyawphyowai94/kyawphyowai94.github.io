@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand ms-1 ms-lg-3" href="index.html"><img src="images/logo.jpg" width="50px" height="50px" alt=""></a>
-          <a class="navbar-brand text-light me-md-1 me-lg-2" href="index.html"><h3>Mobile Bus Ticket</h3></a>
+          <a class="navbar-brand text-light me-md-1 me-lg-2" href="index.html"><h3>Royal Bus Ticket</h3></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -24,7 +24,10 @@
                   <a class="nav-link me-md-2 me-lg-4 text-light" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-hover me-md-2 me-lg-4  active active_page" href="contactus.html">Contact Us</a>
+                  <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="tourpackage.html">Tour Package</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-hover me-md-2 me-lg-4 active active_page" href="contactus.html">Contact Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-hover me-md-2 me-lg-4 text-light" href="todayrouth.html">Today Routh</a>
@@ -43,121 +46,66 @@
       <!-- end navbar -->
     <div class="container mb-5">
         <div class="row">
-          <div class="col-6">
-            <div class="row d-none d-lg-block">
-              <div class="col-12">
-                <div class="card mt-5 w-75">
-                  <div class="card-header bg-dark text-white">
-                    <p class="mt-2">Departure Time</p>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="time" id="anyTime">
-                      <label class="form-check-label" for="anyTime">
-                        Any Time
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="time" id="dayBus">
-                      <label class="form-check-label" for="dayBus">
-                        Day Bus
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="time" id="afternoonBus">
-                      <label class="form-check-label" for="afternoonBus">
-                        Afternoon Bus
-                      </label>
-                    </div>
-                    <div class="form-check mb-3">
-                      <input class="form-check-input" type="radio" name="time" id="nightBus">
-                      <label class="form-check-label" for="nightBus">
-                        Night Bus
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row d-none d-lg-block">
-              <div class="col-12">
-                <div class="card mt-5 w-75">
-                  <div class="card-header bg-dark text-white">
-                    <p class="mt-2">Bus Operators</p>
-                  </div>
-                  <div class="card-body">
-                    <div class="card-body">
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="allOperators">
-                        <label class="form-check-label" for="allOperators">
-                          All Operators
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="highClass">
-                        <label class="form-check-label" for="highClass">
-                          High Class
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="gmExpress">
-                        <label class="form-check-label" for="gmExpress">
-                          Golden Mandalay Express
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input me-2" type="radio" name="Operator" id="KMM">
-                        <label class="form-check-label" for="KMM">
-                          Kaung Myat Mann
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="KM">
-                        <label class="form-check-label" for="KM">
-                          Khaing Mandalay
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="KE">
-                        <label class="form-check-label" for="KE">
-                          King Express
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="LM">
-                        <label class="form-check-label" for="LM">
-                          Lin Mandalar Express
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="MSMT">
-                        <label class="form-check-label" for="MSMT">
-                          Mann Shwe Myo Taw
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="MHAK">
-                        <label class="form-check-label" for="MHAK">
-                          Moe Htet Arkar
-                        </label>
-                      </div>
-                      <div class="form-check mb-3">
-                        <input class="form-check-input" type="radio" name="Operator" id="MMH">
-                        <label class="form-check-label" for="MMH">
-                          Myat Mandalar Htun
-                        </label>
-                      </div>
-                    </div>
-                    <hr class="w-100">
-                    <button class="btn success float-end">Show More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-md-6 offset-md-3">
                 <form action="" class="w-100 regForm mt-5">
                     <h3 class="text-center text-secondary mt-3 mb-5">Send Us A Message</h3>
+                    <div class="row mb-3">
+                      <div class="col-2 ms-5">
+                          <label for="" class="form-label fw-bolder mt-1">Operator</label>
+                      </div>
+                      <div class="col-8 me-1">
+                        <select name="" id="" class="btn border w-100 mb-2 mb-md-3">
+                          <option value="">All Operators</option>
+                          <option value="">High Class</option>
+                          <option value="">Golden Mandalay Express</option>
+                          <option value="">Kaung Myat Mann</option>
+                          <option value="">Khaing Mandalay</option>
+                          <option value="">King Express</option>
+                          <option value="">Lin Mandalar Express</option>
+                          <option value="">Mann Shwe Myo Taw</option>
+                          <option value="">Myat Mandalar Htun</option>
+                          <option value="">Myat Mingalar</option>
+                          <option value="">Shwe Mandalay</option>
+                          <option value="">Tatt Lann</option>
+                          <option value="">Myo Set Titt</option>
+                          <option value="">Shwe Sin Sattkyar</option>
+                          <option value="">Ching Taung Tan</option>
+                          <option value="">Nann Htike Tawin</option>
+                          <option value="">Kyan Tie Aung</option>
+                          <option value="">New Mandalar Htun</option>
+                          <option value="">Shwe Kachin</option>
+                          <option value="">Khaing Mandalay</option>
+                          <option value="">Lumbini</option>
+                          <option value="">Doe Nyi Naung</option>
+                          <option value="">Taung Pyar Tan</option>
+                          <option value="">Maw Kun Tit</option>
+                          <option value="">Mahar</option>
+                          <option value="">OK Express</option>
+                          <option value="">Boss</option>
+                          <option value="">Shwe Pyi Thit</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-2 ms-5">
+                          <label for="" class="form-label fw-bolder mt-1">Date</label>
+                      </div>
+                      <div class="col-8 me-1">
+                        <input type="date" class="btn border w-100 mb-2 mb-md-3" name="" id="">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-2 ms-5">
+                          <label for="" class="form-label fw-bolder mt-1">Time</label>
+                      </div>
+                      <div class="col-8 me-1">
+                        <select name="" id="" class="btn border w-100 mb-2 mb-md-3">
+                          <option value="">Day Bus</option>
+                          <option value="">Afternoon Bus</option>
+                          <option value="">Night Bus</option>
+                        </select>
+                      </div>
+                    </div>
                     <div class="row mb-3">
                         <div class="col-2 ms-5">
                             <label for="" class="form-label fw-bolder mt-1">Photo</label>

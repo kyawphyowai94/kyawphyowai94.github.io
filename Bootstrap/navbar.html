@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-lg ">
+        <div class="container">
+            <a href=""><img src="images/IDOL Logo.jpg" alt="" width="50" height="75"></a>
+             <a href="" class="navbar-brand me-auto">Kyaw Gyi</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Home</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Product</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Blog</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">About</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Contact</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Login</a></li>
+                    <li class="nav-item ms-lg-3"><a href="" class="nav-link ms-5">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+     <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel" class="carousel-slide">
+            <div class="carousel-indicators">
+                <button data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cover_photo.webp" alt="" class="w-100">
+            </div>
+            <div class="carousel-item slide">
+                <img src="images/cover_photo2.webp" alt="" class="w-100">
+            </div>
+            <div class="carousel-item slide">
+                <img src="images/cover_photo3.webp" alt="" class="w-100">
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button> 
+        </div>
+     </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body{
+    background-color: black;
+}
+
+.digitaltime{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 500px;
+}
+.digitaltime p{
+    font-size: 50px;
+}
+
+.digitalClock{
+    position: relative;
+    margin-top: 250px;
+    margin-left: 400px;
+    color: white;
+}
+
+.day{
+    position: relative;
+    margin-top: 200px;
+    margin-left: 350px;
+}
+
+.ampm{
+    position: relative;
+    margin-top: 50px;
+    margin-left: -50px;
+}

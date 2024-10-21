@@ -1,0 +1,196 @@
+/* Universal Selector */
+/* *{
+    color: red;
+} */
+
+/* Tag Selector or Element Selector */
+h1{
+    text-align: center;
+    color: red;
+}
+
+/* Attribute Selector */
+a[title="google"]{
+    letter-spacing: 20px; 
+}
+
+/* id Selector */
+#para{
+    text-indent: 40px;
+}
+
+
+/* class selector */
+.class-select{
+    color: brown;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    line-height: 40px;
+}
+
+
+/* Descedant selector */
+div p{
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* Child Selector */
+div>p{
+    color: black;
+}
+
+span>p {
+    color:red;
+}
+
+/* Hover Selector */
+
+h1 a:hover {
+    color: white;
+    font-size: 50px;
+    background-color: red;
+}
+
+h1:hover {
+    color: red;
+}
+
+h2 a:link {
+    color: green;
+}
+
+h2 a:hover {
+            color: greenyellow;
+            }
+
+h2 a:visited {
+    color: brown;
+}
+
+h2 a:active {
+    color: yellow;
+}
+
+/* Target */
+:target{
+    color: red;
+    border: 2px dotted black;
+    line-height: 20px;
+    letter-spacing: 10px;
+}
+
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    /* display: block; */
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid green;
+    width: 400px;
+    display: inline-block;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+    margin-left: 10px;
+}
+
+.clear{
+    clear:both;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
+.gridone div,.gridTwo div,.gridThree div,.gridfour div,.gridfive div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridone,.gridTwo,.gridThree,.gridfour,.gridfive{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridTwo{
+    grid-column-gap: 40px;
+}
+
+.gridThree{
+    grid-row-gap: 40px;
+    grid-column-gap: 70px;
+}
+
+.colunmadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.parent_absolute{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.absolute{
+    width: 500px;
+    height: 300px;
+    border: 2px solid green;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+}
+
+.parent_relative{
+    width: 1200px;
+    height: 500px;
+    border: 2px solid yellow;
+}
+
+
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid brown;
+    position: relative;
+    top: 10px;
+    left: 120px;
+}
+
+.fixed{
+    position: fixed;
+    top: 20px;
+    right: 50px;
+}
+
+.online {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-family: "Oleo_Script";
+    src: url(Oleo_Script/OleoScript-Bold.ttf);
+  }
+
+  .offline{
+    font-family: "Oleo_Script";
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily</title>
+</head>
+<body>
+    <h1 style="color: red;">Daily Cost</h1>
+    <form action="" name="dailycost">
+        <label for="date">Date : </label>
+        <input type="date" name="date" id=""><br><br>
+        <label for="name">Name : </label>
+        <input type="text" name="name" id=""><br><br>
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id=""><br><br>
+        <button type="button" onclick="totalCost()">Add</button>
+    </form>
+    <h1>Daily Expenditure</h1>
+
+    <table border="1" cellspacing="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Amount</th>
+            </tr>
+            <tbody id="dailyItem">
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center">Total</td>
+                    <td id="total"></td>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+    <script>
+
+        let dailyexpan = [];
+        function totalCost(){
+            let date = document.dailycost.date.value;
+            let name = document.dailycost.name.value;
+            let amount = document.dailycost.amount.value;
+
+            let cost = {
+                daily_date : date,
+                daily_name : name,
+                daily_amount : amount
+            }
+
+
+            dailyexpan.push(cost);
+            console.log(dailyexpan);
+
+            getData();
+        }
+
+        function getData(){
+            let html = '';
+            let total = 0;
+
+            for(let i = 0; i < dailyexpan.length; i++){
+                let dailyCost = dailyexpan[i];
+                total +=parseInt(dailyCost.daily_amount);
+                console.log(total);
+                
+                html += `<tr>
+                        <td>${dailyCost.daily_date}</td>
+                        <td>${dailyCost.daily_name}</td>
+                        <td>${dailyCost.daily_amount}</td>
+                        </tr>`;
+            }
+            document.getElementById('dailyItem').innerHTML = html;
+            document.getElementById('total').innerHTML = total;
+        }
+    </script>
+</body>
+</html>
