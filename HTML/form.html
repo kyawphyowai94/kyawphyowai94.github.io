@@ -24,7 +24,20 @@
         <input type="date" name="stu_dob" id="dob">
         <br><br>
         <label for="passport">Passport</label>
-        <input type="file" name="stu_passport" id="passport">
+        <input type="file" accept=".jpg,.png,.jpeg" name="stu_passport" id="passport">
+        <br><br>
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+        <br><br>
+        <label for="year">Year</label>
+        <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+            <option value="5">Final Year</option>
+        </select>
         <br><br>
         <button type="submit">Save</button>
     </form>
