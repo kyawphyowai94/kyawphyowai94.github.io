@@ -1,0 +1,7 @@
+Git command
+========================
+git ststus
+git add .
+git status
+git commit -m "Message"
+git push
